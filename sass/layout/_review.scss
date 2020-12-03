@@ -1,0 +1,46 @@
+.review-section {
+    background-color: $color-primary-light;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    @media only screen and (max-width: 1000px) {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+    @media only screen and (max-width: 650px) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+    @media only screen and (max-width: 490px) {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    & .review-txt {
+        font-size: 6.7rem;
+        font-weight: 700;
+        margin-bottom: 4rem;
+        @media only screen and (max-width: 900px) {
+            font-size: 5rem;
+            line-height: 1.1;
+        }
+        @media only screen and (max-width: 650px) {
+            font-size: 3.8rem;
+        }
+        @media only screen and (max-width: 490px) {
+            font-size: 2.8rem;
+            margin-bottom: 3rem;
+        }
+    }
+    & .review-info {
+        font-size: 2rem;
+        font-weight: 400;
+        @media only screen and (max-width: 900px) {
+            font-size: 2rem;
+        }
+        @media only screen and (max-width: 650px) {
+            font-size: 1.6rem;
+        }
+        @media only screen and (max-width: 490px) {
+            font-size: 1.4rem;
+        }
+    }
+}

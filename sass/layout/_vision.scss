@@ -1,0 +1,51 @@
+.vision-section {
+    background-color: $color-white;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    @media only screen and (max-width: 1000px) {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+    @media only screen and (max-width: 650px) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+    @media only screen and (max-width: 490px) {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    & .vision-txt {
+        font-size: 3.5rem;
+        max-width: 900px;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+        @media only screen and (max-width: 1000px) {
+            font-size: 2.8rem;
+            max-width: 800px;
+        }
+        @media only screen and (max-width: 650px) {
+            font-size: 2.3rem;
+            max-width: 550px;
+        }
+        @media only screen and (max-width: 490px) {
+            font-size: 1.7rem;
+            max-width: 450px;
+        }
+        @media only screen and (max-width: 450px) {
+            font-size: 1.6rem;
+            margin-bottom: 2.5rem;
+        }
+    }
+    & .arrow_down_icon {
+        width: 64px;
+        height: 32px;
+        @media only screen and (max-width: 490px) {
+            width: calc(64px - 7px);
+            height: calc(32px - 6px);
+        }
+        @media only screen and (max-width: 450px) {
+            width: calc(64px - 20px);
+            height: calc(32px - 12px);
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.cta-section {
+    background-color: $color-primary;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    @media only screen and (max-width: 1000px) {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+    @media only screen and (max-width: 650px) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+    & .cta__text {
+        max-width: 900px;
+        margin: 0 auto;
+        font-weight: 900;
+        font-size: 5.8rem;
+        margin-bottom: 3rem;
+        @media only screen and (max-width: 900px) {
+            max-width: 600px;
+            font-size: 4.3rem;
+        }
+        @media only screen and (max-width: 650px) {
+            max-width: 450px;
+            font-size: 3rem;
+        }
+    }
+}

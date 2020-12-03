@@ -1,0 +1,91 @@
+.features-section {
+    background-color: $color-grey-white-1;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    @media only screen and (max-width: 1000px) {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+    @media only screen and (max-width: 490px) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+    & .container {
+        @media only screen and (max-width: 1200px) {
+            flex-direction: column;
+        }
+        & .features-image img {
+            width: 580px;
+            height: 545px;
+            @media only screen and (max-width: 1200px) {
+                margin-bottom: 6rem;
+            }
+            @media only screen and (max-width: 650px) {
+                width: calc(580px - 150px);
+                height: calc(545px - 150px);
+            }
+            @media only screen and (max-width: 490px) {
+                width: calc(580px - 200px);
+                height: calc(545px - 200px);
+            }
+        }
+        & .features-content {
+            padding-left: 2rem;
+            @media only screen and (max-width: 1200px) {
+                padding-left: 0;
+            }
+            & .title {
+                font-size: 7rem;
+                font-weight: 700;
+                line-height: 1.1;
+                margin-bottom: 2.5rem;
+                @media only screen and (max-width: 1200px) {
+                    font-size: 5.8rem;
+                    margin-bottom: 2rem;
+                }
+                @media only screen and (max-width: 650px) {
+                    font-size: 3.8rem;
+                }
+                @media only screen and (max-width: 490px) {
+                    font-size: 3rem;
+                    margin-bottom: 1.5rem;
+                }
+            }
+            & .subtitle {
+                font-size: 2.5rem;
+                font-weight: 400;
+                color: rgba(0, 0, 0, 0.87);
+                margin-bottom: 3rem;
+                @media only screen and (max-width: 1200px) {
+                    font-size: 2.3rem;
+                }
+                @media only screen and (max-width: 650px) {
+                    margin-bottom: 2rem;
+                }
+                @media only screen and (max-width: 490px) {
+                    font-size: 2rem;
+                    margin-bottom: 1.5rem;
+                }
+            }
+            & .features-list li {
+                font-size: 2.4rem;
+                font-weight: 400;
+                color: rgba(0, 0, 0, 0.87);
+                margin-bottom: 4rem;
+                &:last-child {
+                    margin-bottom: 0 !important;
+                }
+                @media only screen and (max-width: 1200px) {
+                    font-size: 2.2rem;
+                    margin-bottom: 2rem;
+                }
+                @media only screen and (max-width: 650px) {
+                    font-size: 2rem;
+                }
+                @media only screen and (max-width: 490px) {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+}
