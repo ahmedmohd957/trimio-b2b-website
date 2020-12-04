@@ -6,8 +6,20 @@
     top: 0;
     left: 0;
     z-index: 999;
+    @media only screen and (max-width: 450px) {
+        height: 70px;
+    }
     & .logo-box .logo {
         height: 3.2rem;
+        @media only screen and (max-width: 650px) {
+            height: 2.8rem;
+        }
+        @media only screen and (max-width: 450px) {
+            height: 2.5rem;
+        }
+        @media only screen and (max-width: 350px) {
+            height: 2.3rem;
+        }
     }
     & .nav-menu {
         @media only screen and (max-width: 1000px) {

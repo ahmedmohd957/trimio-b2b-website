@@ -11,6 +11,7 @@ html {
 }
 
 body {
+    background-color: $color-grey-white-1;
     font-family: Circular, sans-serif;
     font-weight: 400;
     overflow-x: hidden;
@@ -21,4 +22,8 @@ body {
     margin: 0 auto 0 auto;
     padding-left: 3rem;
     padding-right: 3rem;
+    @media only screen and (max-width: 490px) {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
 }
