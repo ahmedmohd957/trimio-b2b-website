@@ -1,0 +1,53 @@
+.page_content {
+    background-color: $color-white;
+    margin-top: 80px;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    @media only screen and (max-width: 450px) {
+        margin-top: 70px;
+    }
+    & h2 {
+        margin: 1.8rem 0px;
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        &::after {
+            content: '';
+            position: absolute;
+            display: block;
+            left: 0;
+            bottom: 0.5rem;
+            right: 0;
+            height: 0.8rem;
+            background-color: $color-primary;
+            z-index: -1;
+        }
+        @media only screen and (max-width: 580px) {
+            font-size: 2.8rem;
+        }
+        @media only screen and (max-width: 400px) {
+            font-size: 2.4rem;
+        }
+    }
+    & h4 {
+        margin-top: 2rem;
+        margin-bottom: 0.5rem;
+        font-size: 2rem;
+    }
+    & .paragraph {
+        padding: 5px 0px;
+        font-size: 1.7rem;
+    }
+    & ul {
+        padding: 1rem 2rem;
+        & li {
+            font-size: 1.7rem;
+            padding: 0.2rem 0;
+        }
+    }
+    & a {
+        color: #121212;
+    }
+}

@@ -5,7 +5,7 @@
         text-decoration: none;
         display: inline-block;
         border-radius: 10rem;
-        font-size: $default-font-size;
+        font-size: 1.7rem;
         transition: all 0.2s;
         //Change for the <button> element
         border: none;
@@ -16,10 +16,10 @@
         outline: none;
     }
     &--small {
-        padding: 1.4rem 2.5rem;
+        padding: 1.4rem 2.6rem;
     }
     &--big {
-        padding: 1.8rem 3rem;
+        padding: 1.6rem 2.8rem;
         @media only screen and (max-width: 450px) {
             padding: 1.5rem 2.5rem;
         }

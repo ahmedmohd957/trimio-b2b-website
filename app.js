@@ -1,36 +1,78 @@
-const showNav = () => {
+const navHandler = () => {
     const burger = document.querySelector('.burger');
     const nav_menu = document.querySelector('.nav-menu');
     const body = document.body;
     const navLinks = document.querySelectorAll('.nav-menu__item');
     const navBtn = document.querySelector('.nav-btn-anim');
-
+    // Nav Links
+    const featuresLink = document.querySelector('.features-link');
+    const pricingLink = document.querySelector('.pricing-link');
+    const aboutLink = document.querySelector('.about-link');
+    const faqLink = document.querySelector('.faq-link');
 
     burger.addEventListener('click', () => {
         burger.classList.toggle('toggle');
-        nav_menu.classList.toggle('nav-activate');
-        body.classList.toggle('nav-activate-overflow-y-hidden');
+        nav_menu.classList.toggle('nav-active');
+        body.classList.toggle('nav-active-overflow-y-hidden');
 
         for (i = 0; i <= (navLinks.length + 1); i++) {
-            console.log(i);
             if (i === navLinks.length) {
                 navBtn.style.animation = `navLinkFade 0.5s ease forwards ${i / 10}s`;
                 return
             }
 
-            const link = navLinks[i];
-            if (link.style.animation) {
-                link.style.animation = '';
+            if (navLinks[i].style.animation) {
+                navLinks[i].style.animation = '';
             } else {
-                link.style.animation = `navLinkFade 0.5s ease forwards ${i / 10}s`;
+                navLinks[i].style.animation = `navLinkFade 0.5s ease forwards ${i / 10}s`;
             }
         }
     });
+
+    const close = () => {
+        burger.classList.remove('toggle');
+        nav_menu.classList.remove('nav-active');
+        body.classList.remove('nav-active-overflow-y-hidden');
+
+        navLinks.forEach((link) => {
+            link.style.animation = '';
+        });
+    }
+
+    const scrollTo = (section) => {
+        setTimeout(function() {
+            document.getElementById(section).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }, 0);
+    }
+
+    featuresLink.addEventListener('click', () => {
+        close();
+        scrollTo('features');
+    });
+
+    pricingLink.addEventListener('click', () => {
+        close();
+        scrollTo('pricing');
+    });
+
+    aboutLink.addEventListener('click', () => {
+        close();
+        /// Navigate to another page
+    });
+
+    faqLink.addEventListener('click', () => {
+        close();
+        scrollTo('faq');
+    });
 }
 
-showNav();
+navHandler();
+/* END ---- NAV */
 
-// Cookies
+
+/* COOKIES */
 const cookieStorage = {
     getItem: (item) => {
         const cookies = document.cookie
@@ -63,3 +105,4 @@ window.onload = () => {
         }, 2000);
     }
 };
+/* END ---- COOKIES */

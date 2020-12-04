@@ -38,16 +38,16 @@
     <nav class="nav">
         <div class="container u-display-flex u-justify-content-space-between u-align-items-center u-full-height">
             <div class="logo-box">
-                <img src="/assets/images/title.svg" alt="Logo" class="logo">
+                <a href="#"><img src="/assets/images/title.svg" alt="Logo" class="logo"></a>
             </div>
             <div class="nav-menu">
                 <ul class="nav-menu-list u-list-style-none">
-                    <li class="nav-menu__item u-display-inline-block"><a class="nav-menu__link u-text-decoration-none" href="#">Funktioner</a></li>
-                    <li class="nav-menu__item u-display-inline-block"><a class="nav-menu__link u-text-decoration-none" href="#">Priser</a></li>
-                    <li class="nav-menu__item u-display-inline-block"><a class="nav-menu__link u-text-decoration-none" href="#">Om Trimio</a></li>
-                    <li class="nav-menu__item u-display-inline-block"><a class="nav-menu__link u-text-decoration-none" href="#">Vanliga frågor</a></li>
+                    <li class="nav-menu__item u-display-inline-block features-link"><a class="nav-menu__link u-text-decoration-none">Funktioner</a></li>
+                    <li class="nav-menu__item u-display-inline-block pricing-link"><a class="nav-menu__link u-text-decoration-none">Priser</a></li>
+                    <li class="nav-menu__item u-display-inline-block about-link"><a class="nav-menu__link u-text-decoration-none">Om Trimio</a></li>
+                    <li class="nav-menu__item u-display-inline-block faq-link"><a class="nav-menu__link u-text-decoration-none">Vanliga frågor</a></li>
                 </ul>
-                <button class="btn btn--small btn--primary nav-btn-anim">Prova gratis</button>
+                <a class="btn btn--small btn--primary nav-btn-anim" href="https://apps.apple.com/se/app/trimio-salon/id1513996676">Prova gratis</a>
             </div>
             <div class="burger">
                 <div class="line1"></div>
@@ -71,7 +71,7 @@
                         <li class="u-display-inline-block"><i class="fas fa-check"></i> Förenkla din vardag</li>
                         <li class="u-display-inline-block"><i class="fas fa-check"></i> Öka din omsättning</li>
                     </ul>
-                    <button class="btn btn--big btn--primary">Prova gratis i 30 dagar</button>
+                    <a class="btn btn--big btn--primary" href="https://apps.apple.com/se/app/trimio-salon/id1513996676">Prova gratis i 30 dagar</a>
                 </div>
                 <div class="masthead-image">
                     <img src="assets/images/trimio_iphone_mockup-02.png" alt="Trimio App Mockup">
@@ -88,7 +88,7 @@
         </section>
 
         <!-- Features Section -->
-        <section class="features-section u-overflow-hidden">
+        <section class="features-section u-overflow-hidden" id="features">
             <div class="container u-display-flex u-align-items-center">
                 <div class="features-image">
                     <img src="assets/images/trimio_asset_img.png" alt="Trimio Image">
@@ -115,7 +115,7 @@
         </section>
 
         <!-- Pricing Section -->
-        <section class="pricing-section">
+        <section class="pricing-section" id="pricing">
             <div class="container u-display-flex u-justify-content-center u-align-items-flex-start">
                 <div class="card__price-box u-text-align-center">
                     <p class="card__price-type">GRATIS</p>
@@ -159,12 +159,12 @@
         <section class="cta-section">
             <div class="container u-text-align-center">
                 <h2 class="cta__text">Skaffa appen och kom igång med Trimio idag!</h2>
-                <button class="btn btn--big btn--white">Skaffa appen</button>
+                <a class="btn btn--big btn--white" href="https://apps.apple.com/se/app/trimio-salon/id1513996676">Skaffa appen</a>
             </div>
         </section>
 
         <!-- FAQ Section -->
-        <section class="faq faq-section">
+        <section class="faq-section" id="faq">
             <div class="container u-display-flex u-align-items-flex-start">
                 <div class="faq__box-1">
                     <h3 class="faq__title">Har du frågor om appen?</h3>
@@ -220,16 +220,15 @@
                 <div class="footer__menu">
                     <div class="footer__menu-head">KOM IGÅNG</div>
                     <ul class="footer__menu-list u-list-style-none">
-                        <li class="footer__menu-item"><a href="#">Ladda ner appen</a></li>
-                        <li class="footer__menu-item"><a href="#">Vanliga frågor</a></li>
+                        <li class="footer__menu-item"><a href="https://apps.apple.com/se/app/trimio-salon/id1513996676">Ladda ner appen</a></li>
                     </ul>
                 </div>
                 <div class="footer__menu">
                     <div class="footer__menu-head">FÖLJ TRIMIO</div>
                     <ul class="footer__menu-list u-list-style-none">
-                        <li class="footer__menu-item"><a href="#">Instagram</a></li>
-                        <li class="footer__menu-item"><a href="#">Facebook</a></li>
-                        <li class="footer__menu-item"><a href="#">Twitter</a></li>
+                        <li class="footer__menu-item"><a href="https://www.instagram.com/trimiobusiness/" target="_blank">Instagram</a></li>
+                        <li class="footer__menu-item"><a href="https://www.facebook.com/trimiose" target="_blank">Facebook</a></li>
+                        <li class="footer__menu-item"><a href="https://twitter.com/trimio_se" target="_blank">Twitter</a></li>
                     </ul>
                 </div>
                 <div class="footer__menu">
@@ -237,8 +236,8 @@
                     <ul class="footer__menu-list u-list-style-none">
                         <li class="footer__menu-item"><a href="#">Om oss</a></li>
                         <li class="footer__menu-item"><a href="#">Kontakta oss</a></li>
-                        <li class="footer__menu-item"><a href="#">Användarvillkor</a></li>
-                        <li class="footer__menu-item"><a href="#">Integritetspolicy</a></li>
+                        <li class="footer__menu-item"><a href="/privacy.html">Användarvillkor</a></li>
+                        <li class="footer__menu-item"><a href="/terms.html">Integritetspolicy</a></li>
                     </ul>
                 </div>
             </div>
