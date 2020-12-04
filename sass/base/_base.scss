@@ -17,6 +17,12 @@ body {
     overflow-x: hidden;
 }
 
+.nav-activate-overflow-y-hidden {
+    @media only screen and (max-width: 900px) {
+        overflow-y: hidden !important;
+    }
+}
+
 .container {
     max-width: 1260px;
     margin: 0 auto 0 auto;
