@@ -1,0 +1,92 @@
+.form {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    @media only screen and (max-width: 580px) {
+        margin-top: 2rem;
+    }
+    &__group {
+        &:not(:last-child) {
+            max-width: 800px;
+            margin-bottom: 2rem;
+        }
+        &:last-child {
+            margin-top: 3rem;
+        }
+    }
+    &__input {
+        width: 100%;
+        font-size: 2.5rem;
+        padding: 2rem 0;
+        border: none;
+        font-family: inherit;
+        color: inherit;
+        display: block;
+        border-bottom: 2px solid $color-black;
+        transition: all 0.3s;
+        @media only screen and (max-width: 580px) {
+            font-size: 2.1rem;
+        }
+        &:focus {
+            outline: none;
+        }
+        &::-webkit-input-placeholder {
+            font-size: 2.5rem;
+            color: rgba(0, 0, 0, 0.7);
+            @media only screen and (max-width: 580px) {
+                font-size: 2.1rem;
+            }
+        }
+        &--message {
+            min-width: 100%;
+            max-width: 100%;
+            min-height: 10rem;
+            max-height: 10rem;
+        }
+    }
+    &__label {
+        font-size: 2rem;
+        margin-top: 1rem;
+        display: block;
+        transition: all 0.3s;
+    }
+    &__input:placeholder-shown+&__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
+    & .status_container {
+        max-width: 800px;
+        margin-top: -2rem;
+        margin-bottom: 2rem;
+        padding: 2rem 0;
+        border-radius: 1rem;
+        text-align: center;
+        display: none;
+        @media only screen and (max-width: 580px) {
+            margin-top: 0;
+            padding: 1.5rem 0;
+        }
+        & .status {
+            font-size: 2.3rem;
+            font-weight: 700;
+            @media only screen and (max-width: 580px) {
+                font-size: 2rem;
+            }
+            @media only screen and (max-width: 414px) {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+.success {
+    display: block !important;
+    background-color: rgba(green, 0.15);
+    color: green;
+}
+
+.error {
+    display: block !important;
+    background-color: rgba(red, 0.15);
+    color: red;
+}

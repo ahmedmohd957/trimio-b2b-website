@@ -7,7 +7,6 @@ const navHandler = () => {
     // Nav Links
     const featuresLink = document.querySelector('.features-link');
     const pricingLink = document.querySelector('.pricing-link');
-    const aboutLink = document.querySelector('.about-link');
     const faqLink = document.querySelector('.faq-link');
 
     burger.addEventListener('click', () => {
@@ -55,11 +54,6 @@ const navHandler = () => {
     pricingLink.addEventListener('click', () => {
         close();
         scrollTo('pricing');
-    });
-
-    aboutLink.addEventListener('click', () => {
-        close();
-        /// Navigate to another page
     });
 
     faqLink.addEventListener('click', () => {

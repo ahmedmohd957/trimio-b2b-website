@@ -23,6 +23,9 @@
             height: 0.8rem;
             background-color: $color-primary;
             z-index: -1;
+            @media only screen and (max-width: 400px) {
+                bottom: 0.3rem;
+            }
         }
         @media only screen and (max-width: 580px) {
             font-size: 2.8rem;
