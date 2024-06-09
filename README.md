@@ -19,13 +19,13 @@ To set up the project locally, follow these steps:
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/ahmedmohd957/trimio-salon-website.git
+   git clone https://github.com/ahmedmohd957/trimio-b2b-website.git
    ```
 
 2. Navigate to the project directory:
 
    ```sh
-   cd trimio-salon-website
+   cd trimio-b2b-website
    ```
 
 3. Open the `index.html` file in your browser to view the website.
